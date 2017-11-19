@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/russo_one"
+        android:text="@string/psychology_test"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_aizenka"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/philosopher_bold"
+            android:text="@string/button_aizenka"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button_profession"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_aizenka"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/philosopher_bold"
+            android:text="@string/button_profession"
+            android:textSize="15sp" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_exit"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/philosopher"
+        android:text="@string/exit"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
